@@ -1,7 +1,7 @@
-package DSA_Nados;
+package DSA_Nados.Getting_Started;
 import java.util.*;
 
-public class Main {
+public class Print_Z {
 
     public static void main(String[] args) {
         // Write your code here

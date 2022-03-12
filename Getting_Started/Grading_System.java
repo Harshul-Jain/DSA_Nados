@@ -1,4 +1,4 @@
-package DSA_Nados;
+package DSA_Nados.Getting_Started;
 import java.util.*;
 
 public class Grading_System {
