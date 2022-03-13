@@ -1,3 +1,5 @@
+package DSA_Nados.Patterns;
+
 import java.util.Scanner;
 
 public class Pattern13 {
