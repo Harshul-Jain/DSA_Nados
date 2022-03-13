@@ -1,5 +1,7 @@
 package DSA_Nados.Patterns;
 
+import java.util.Scanner;
+
 public class Pattern17 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -30,6 +32,6 @@ public class Pattern17 {
             System.out.println();
 
         }
-
+        scn.close();
     }
 }
