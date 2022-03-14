@@ -44,7 +44,11 @@ public class DifferenceOfTwoArrays {
             diff[j]=d%10;
             j--;
         }
-        for(int x=0;x<diff.length;x++){
+        int x=0;
+        while(x<diff.length && diff[x]==0){
+            x++;
+        }
+        for(;x<diff.length;x++){
             if(x==0 && diff[x]==0)
                 continue;
             System.out.println(diff[x]);
