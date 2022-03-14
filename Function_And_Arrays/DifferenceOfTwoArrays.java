@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DifferenceOfTwoArrays {
     public static void main(String[] args) throws Exception {
-        Scanner scn=new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         int n1=scn.nextInt();
         int[] arr1=new int[n1];
         for(int i=0;i<n1;i++){
@@ -19,8 +19,10 @@ public class DifferenceOfTwoArrays {
         int i=n1-1;
         int j=n2-1;
         int c=0;
-        while(i>=0 && j>=0){
-            int d=arr2[j]-arr1[i]-c;
+        while(i>=0 ||j>=0){
+            int val1=i>=0? arr1[i]:0;
+            int val2=j>=0? arr2[j]:0;
+            int d=val2-val1-c;
             if(d<0){
                 d=d+10;
                 c=1;
@@ -32,18 +34,7 @@ public class DifferenceOfTwoArrays {
             i--;
             j--;
         }
-        while(j>=0){
-            int d=arr2[j]-c;
-            if(d<0){
-                d+=10;
-                c=1;
-            }
-            else{
-                c=0;
-            }
-            diff[j]=d%10;
-            j--;
-        }
+        
         int x=0;
         while(x<diff.length && diff[x]==0){
             x++;
@@ -54,5 +45,5 @@ public class DifferenceOfTwoArrays {
             System.out.println(diff[x]);
         }
         scn.close();
-     }
+    }
 }
