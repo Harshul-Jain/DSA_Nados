@@ -1,4 +1,4 @@
-package DSA_Nados;
+package DSA_Nados.Function_And_Arrays;
 
 import java.util.Scanner;
 
