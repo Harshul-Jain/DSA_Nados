@@ -46,4 +46,5 @@ public class DifferenceOfTwoArrays {
         }
         scn.close();
     }
+
 }
