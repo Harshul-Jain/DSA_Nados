@@ -25,15 +25,17 @@ public class BrokenEconomy{
                 ceil=mid;
             }
             else{
-                System.out.println(arr[mid]);
-                scn.close();
-                return;
+                floor=mid;
+                ceil=mid;
+                break;
+                
             }
         }
         System.out.println(arr[ceil]);
         System.out.println(arr[floor]);
         scn.close();
      }
+    
     
     
 }
