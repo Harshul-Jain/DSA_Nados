@@ -1,4 +1,7 @@
 package DSA_Nados.TwoDArrays;
+
+import java.util.Scanner;
+
 public class TwoDArrayDemo {
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
@@ -16,5 +19,6 @@ public class TwoDArrayDemo {
           }
           System.out.println();
         }
+        scn.close();
      }
 }
